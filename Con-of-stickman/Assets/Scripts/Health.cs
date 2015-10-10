@@ -3,13 +3,20 @@ using System.Collections;
 
 public class Health : MonoBehaviour {
 
-	int health = 10 ;
+	public int health = 10 ;
 
 	void Update () {
 	
 		if (health <= 0)
 			Destroy (gameObject);
 
+	}
+
+	
+	public void damageplayer (int damage){
+
+		damage -= health;
 
 	}
+
 }

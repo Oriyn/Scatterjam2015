@@ -4,7 +4,15 @@ using System.Collections;
 public class MovementP2 : MonoBehaviour {
 	
 	public float speed = 1.5f ;	
+	public Vector3 com;
+	public Rigidbody2D rb;
 
+
+	void Start() {
+		rb = GetComponent<Rigidbody2D>();
+		rb.centerOfMass = com;
+	}
+	
 	void Update () {
 	
 	    if (Input.GetKey(KeyCode.A))

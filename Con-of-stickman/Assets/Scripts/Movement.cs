@@ -4,7 +4,14 @@ using System.Collections;
 public class Movement : MonoBehaviour {
 
 	public float speed = 1.5f ; 
-
+	public Vector3 com;
+	public Rigidbody2D rb;
+	
+	
+	void Start() {
+		rb = GetComponent<Rigidbody2D>();
+		rb.centerOfMass = com;
+	}
 
 	void Update () 
 	{
