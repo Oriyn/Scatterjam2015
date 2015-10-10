@@ -15,8 +15,12 @@ public class Health : MonoBehaviour {
 	
 	public void damageplayer (int damage){
 
-		damage -= health;
+		 damage -= health  ;
 
 	}
 
+	public void OnCollisionEnter2D () {
+
+		damageplayer(5) ; 
+	}
 }
