@@ -9,6 +9,7 @@ public class Health : MonoBehaviour {
 	
 		if (health <= 0)
 			Destroy (gameObject);
+	
 
 	}
 
@@ -23,4 +24,13 @@ public class Health : MonoBehaviour {
 
 		damageplayer(1) ; 
 	}
+
+
+	void OnDestroy() {
+
+		Application.LoadLevel (3);
+
+
+	}
+
 }
