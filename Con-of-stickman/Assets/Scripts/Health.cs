@@ -21,6 +21,6 @@ public class Health : MonoBehaviour {
 
 	public void OnCollisionEnter2D () {
 
-		damageplayer(10) ; 
+		damageplayer(1) ; 
 	}
 }
