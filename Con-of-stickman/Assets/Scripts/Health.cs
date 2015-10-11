@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Health : MonoBehaviour {
 
-	public int health = 10 ;
+	public int health = 100 ;
 
 	void Update () {
 	
@@ -15,12 +15,12 @@ public class Health : MonoBehaviour {
 	
 	public void damageplayer (int damage){
 
-		 damage -= health  ;
+		 health -= damage  ;
 
 	}
 
 	public void OnCollisionEnter2D () {
 
-		damageplayer(5) ; 
+		damageplayer(10) ; 
 	}
 }
